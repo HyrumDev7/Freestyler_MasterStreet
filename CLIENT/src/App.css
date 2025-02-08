@@ -1,0 +1,110 @@
+.carousel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.carousel-item h3 {
+  font-size: 1.8rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.carousel-item p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 1.2rem;
+}
+
+.discount-price {
+  font-weight: bold;
+  color: #e74c3c;
+  font-size: 1.4rem;
+}
+
+.new-releases {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 1.4rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.product-card .price {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.special-offers {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.special-offers .product-card .price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 1.1rem;
+}
+
+.special-offers .product-card .discount-price {
+  font-size: 1.3rem;
+  color: #e74c3c;
+  font-weight: bold;
+}
