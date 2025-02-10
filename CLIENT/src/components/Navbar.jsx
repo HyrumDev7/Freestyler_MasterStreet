@@ -1,18 +1,10 @@
-import {
-  Navbar,
-  Nav,
-  Container,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { FaSearch, FaShoppingCart, FaUser } from "react-icons/fa";
 
 const CustomNavbar = () => {
   return (
     <Navbar expand="lg" bg="dark" data-bs-theme="dark">
       <Container>
-        {/* Logo */}
         <Navbar.Brand href="/">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Under_armour_logo.svg"
@@ -21,10 +13,7 @@ const CustomNavbar = () => {
           />
         </Navbar.Brand>
 
-        {/* Botón para expandir en móvil */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
-        {/* Menú de navegación */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
             <Nav.Link href="/">New</Nav.Link>
@@ -34,16 +23,15 @@ const CustomNavbar = () => {
             <Nav.Link href="/">Contacto</Nav.Link>
           </Nav>
 
-          {/* Iconos de usuario */}
           <Nav>
             <Nav.Link href="/">
-              <i className="bi bi-search"></i>
+              <FaSearch />
             </Nav.Link>
             <Nav.Link href="/">
-              <i className="bi bi-cart"></i>
+              <FaShoppingCart />
             </Nav.Link>
             <Nav.Link href="/">
-              <i className="bi bi-person"></i>
+              <FaUser />
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
