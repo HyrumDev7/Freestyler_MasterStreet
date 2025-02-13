@@ -1,28 +1,30 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { FaSearch, FaShoppingCart, FaUser } from "react-icons/fa";
+import "../styles/Navbar.css";
+import MS from "../assets/MS.jpg";
 
 const CustomNavbar = () => {
   return (
-    <Navbar expand="lg" bg="dark" data-bs-theme="dark">
+    <Navbar expand="lg" className="custom-navbar">
       <Container>
+        {/* Logo + Título */}
         <Navbar.Brand href="/">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Under_armour_logo.svg"
-            alt="Master Street"
-            height="30"
-          />
+          <img src={MS} alt="Master Street Logo" className="navbar-logo" />
+          <span className="navbar-title">Master Street</span>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
+          {/* Menú Central */}
           <Nav className="mx-auto">
-            <Nav.Link href="/">New</Nav.Link>
+            <Nav.Link href="/">Inicio</Nav.Link>
             <Nav.Link href="/">Freestylers</Nav.Link>
             <Nav.Link href="/">Batallas</Nav.Link>
             <Nav.Link href="/">Redes Sociales</Nav.Link>
             <Nav.Link href="/">Contacto</Nav.Link>
           </Nav>
 
+          {/* Iconos de Búsqueda y Cuenta */}
           <Nav>
             <Nav.Link href="/">
               <FaSearch />
